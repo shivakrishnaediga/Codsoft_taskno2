@@ -1,3 +1,4 @@
+# Landing page
 #  Description
 Welcome to our project! This application is developed using HTML, CSS, and JavaScript languages to create a landing page. Additionally, it incorporates keyboard functionality, allowing users to perform operations not only via mouse or touchpad.
 

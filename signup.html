@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+body{
+background-repeat:no-repeat;
+background-size:cover;
+background-attachment:fixed;
+text-align:center;
+align-items:center;
+padding:150px 200px 3px 450px;
+}
+.card {
+background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+max-width: 400px;
+height: 250px;
+padding:10px;
+display: flex;
+flex-direction: column;
+}
+.btn{
+width:50%;
+height:30px;
+border-radius:25px;
+}
+.remember-forgot {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding:0px 50px 0px 50px;
+}
+.info{
+border-radius: 50%;
+display:inline-block;
+color:black;
+justify-content: center;
+align-items: center;
+}
+.input-field {
+width:50%;
+padding: 10px;
+text-align: center;
+}
+.input-icons i {
+position: absolute;
+}
+.icon {
+padding: 10px;
+color: green;
+min-width: 50px;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<form class="card">
+<div class="info">
+<i class="fa-solid fa-user"></i>
+</div>
+<br>
+<div class="input-icons">
+<i class="fa-solid fa-user icon"></i>
+<input class="input-field" type="text" placeholder="Username">
+</div><br>
+<div class="input-icons">
+<i class="fa-solid fa-lock icon"></i>
+<input class="input-field" type="Password" placeholder="Password">
+</div><br>
+<div class="remember-forgot">
+<div>
+<input type="checkbox" id="cb" value="Remember me">
+<label for="cb">Remember me</label>
+</div>
+<p>Forgot Password?</p>
+</div>
+<br>
+<center><button class="btn">Login</button></center>
+</form>
+</body>

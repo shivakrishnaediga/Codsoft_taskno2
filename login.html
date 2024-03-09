@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+body{
+background-repeat:no-repeat;
+background-size:cover;
+background-attachment:fixed;
+text-align:center;
+align-items:center;
+padding:5px 150px 3px 250px;
+}
+.card {
+background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+max-width: 800px;
+height: 600px;
+padding:10px;
+display: flex;
+flex-direction: column;
+}
+.input-field {
+width:50%;
+padding: 10px;
+text-align: center;
+}
+.input-icons i {
+position: absolute;
+}
+.icon {
+padding: 10px;
+color: green;
+min-width: 50px;
+text-align: center;
+}
+.info{
+width:30%;
+height:30px;
+border-radius:25px;
+}
+</style>
+</head>
+<body>
+<form class="card">
+<h1><center>Sign Up</center></h1>
+<p><center>Create your account</center></h2><br>
+<div class="input-icons">
+<i class="fa-solid fa-user icon"></i>
+<input class="input-field" type="text" placeholder="Username" required>
+</div><br>
+<div class="input-icons">
+<i class="fa-solid fa-phone icon"></i>
+<input class="input-field" type="number" placeholder="Phone number" id="p" required pattern="[1-9][0-9]{9}">
+</div><br>
+<div class="input-icons">
+<i class="fa-solid fa-lock icon"></i>
+<input class="input-field" type="Password" placeholder="Password">
+</div><br>
+<div class="input-icons">
+<i class="fa-solid fa-lock icon"></i>
+<input class="input-field" type="Password" placeholder="Confirm Password">
+</div><br>
+<center><button class="info" onclick="check()">Sign Up</button></center>
+<p><center>or</center></p>
+<center><button class="info">Sign In with Google</button></center>
+<br>
+<p>Already have an account? <a href="signup.html">Login</a></p>
+</form>
+<script>
+function check()
+{
+var p=document.getElementById('p').value;
+var pPattern=/^[1-9][0-9]{9}$/;
+}
+</script>
+</body>
